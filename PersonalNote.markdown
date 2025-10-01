@@ -343,62 +343,8 @@ shap_values = explainer(X_test)
 shap.summary_plot(shap_values, X_test)
 ```
 
----
 
-## 8. Hiển thị ảnh trên GitHub
 
-Khi upload file Markdown lên GitHub, đôi khi ảnh không hiển thị do lỗi đường dẫn hoặc cấu hình. Dưới đây là các bước để đảm bảo ảnh hiển thị đúng:
-
-### 8.1 Kiểm tra upload ảnh
-- Đảm bảo thư mục `images/` chứa tất cả ảnh (như `ml_workflow.png`, `json_structure.png`, v.v.) đã được commit và push lên GitHub.
-- Truy cập repo trên GitHub, kiểm tra xem thư mục `images/` có xuất hiện với các file ảnh không.
-- Lệnh Git:
-  ```bash
-  git add images/
-  git commit -m "Add images for Markdown"
-  git push origin main
-  ```
-
-### 8.2 Sử dụng đường dẫn đúng
-- **Đường dẫn tương đối**: Nếu file Markdown ở root repo, dùng:
-  ```markdown
-  ![Tên hình](images/filename.png)
-  ```
-  - Đảm bảo tên file đúng (phân biệt chữ hoa/thường, không dấu cách, dùng `_` hoặc `-`).
-- **Raw URL (khuyến nghị)**: Lấy URL raw từ GitHub:
-  1. Mở ảnh trên GitHub (ví dụ: `https://github.com/yourusername/yourrepo/blob/main/images/ml_workflow.png`).
-  2. Click nút **Raw** để lấy URL: `https://raw.githubusercontent.com/yourusername/yourrepo/main/images/ml_workflow.png`.
-  3. Dùng trong Markdown:
-     ```markdown
-     ![Tên hình](https://raw.githubusercontent.com/yourusername/yourrepo/main/images/filename.png)
-     ```
-- Thay `yourusername/yourrepo` bằng tên người dùng và repo thực tế của bạn.
-
-### 8.3 Kiểm tra lỗi
-- **Case-sensitive**: Đảm bảo tên file chính xác (ví dụ: `Image.png` ≠ `image.png`).
-- **Cache**: Refresh trang GitHub (Ctrl+F5) hoặc xóa cache browser.
-- **Mobile**: Nếu ảnh không load trên app GitHub, thử trên desktop hoặc dùng VPN (một số ISP chặn `raw.githubusercontent.com`).
-- **Developer Tools**: Mở F12 > Console/Network, reload trang để xem lỗi (như 404 nếu đường dẫn sai).
-
-### 8.4 GitHub Pages (nếu sử dụng)
-- Đặt ảnh trong thư mục `static/` hoặc `assets/`.
-- Cập nhật đường dẫn trong Markdown, ví dụ:
-  ```markdown
-  ![Tên hình](/assets/filename.png)
-  ```
-- Kiểm tra file `_config.yml` để đảm bảo cấu hình đúng.
-
-### 8.5 Tạo ảnh (nếu chưa có)
-- **Biểu đồ (heatmap, boxplot, SMOTE, v.v.)**: Dùng Matplotlib/Seaborn. Ví dụ tạo heatmap:
-  ```python
-  import seaborn as sns
-  import matplotlib.pyplot as plt
-  sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
-  plt.savefig('images/correlation_heatmap.png')
-  plt.show()
-  ```
-- **Sơ đồ (workflow, neural network)**: Dùng Draw.io, Lucidchart, hoặc NN-SVG.
-- Lưu ảnh vào thư mục `images/` trước khi commit.
 
 ---
 
@@ -410,4 +356,3 @@ Khi upload file Markdown lên GitHub, đôi khi ảnh không hiển thị do l�
 - EDA: Multicollinearity, feature selection.  
 - Mô hình: Hồi quy, phân loại, không giám sát, neural networks.  
 - Thực hành ML có đạo đức: Bias, privacy, explainability.  
-- **GitHub**: Đảm bảo ảnh hiển thị bằng cách commit thư mục `images/` và dùng raw URL.
