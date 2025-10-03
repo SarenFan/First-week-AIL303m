@@ -2,7 +2,7 @@
 
 ## 1. Quy trình làm việc của Machine Learning (Workflow)
 
-![Quy trình Machine Learning](https://raw.githubusercontent.com/SarenFan/First-week-AIL303m/main/images/ml_workflow.png)  
+![Quy trình Machine Learning]([https://raw.githubusercontent.com/SarenFan/First-week-AIL303m/main/images/ml_workflow.png](https://static.packt-cdn.com/products/9781788831307/graphics/assets/f366040e-1ec5-4a7b-9d0e-277f00c308e1.png))  
 *Hình 1: Sơ đồ quy trình Machine Learning, từ xác định vấn đề đến giám sát mô hình.*
 
 1. **Xác định vấn đề**  
