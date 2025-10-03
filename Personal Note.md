@@ -83,7 +83,7 @@
   ```
 
 ### 2.3 NoSQL & MongoDB
-![Cấu trúc dữ liệu JSON](https://raw.githubusercontent.com/SarenFan/First-week-AIL303m/main/images/json_structure.png)  
+![Cấu trúc dữ liệu JSON](https://topdev.vn/blog/wp-content/uploads/2024/08/So-sanh-MySQL-vs-MongoDB-2-1068x356.png)  
 *Hình 2: So sánh dữ liệu JSON (MongoDB) với bảng SQL.*
 
 - **NoSQL**: CSDL phi quan hệ, dữ liệu thường dưới dạng **JSON**.  
@@ -113,7 +113,7 @@
   ```
 
 ### 2.5 Xử lý dữ liệu lớn (Big Data Handling)
-![So sánh hiệu suất](https://raw.githubusercontent.com/SarenFan/First-week-AIL303m/main/images/pandas_dask_spark.png)  
+![So sánh hiệu suất](https://www.confessionsofadataguy.com/wp-content/uploads/2021/09/Screen-Shot-2021-09-06-at-5.30.54-PM-1030x640.png)  
 *Hình 3: So sánh tốc độ xử lý của Pandas, Dask, và PySpark với dữ liệu lớn.*
 
 - Với dữ liệu lớn (hàng triệu hàng), Pandas có thể chậm hoặc hết RAM.  
